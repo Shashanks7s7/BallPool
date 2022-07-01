@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favIcon.png" />
+    <title>8 Ball Pool</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="assetsloader">LOADING...</div>
+    <div id="login">
+      <div id="formText">Welcome to 8 Ball Pool Game</div>
+      <div>
+        <input type="text" placeholder="Enter your Name" id="nameInput" />
+      </div>
+      <button type="submit" id="submitButton">Lets Play</button>
+    </div>
+    <div id="blank"></div>
+    <div id="scoreScreen"></div>
+    <div id="scoreScreen__exitbtn"></div>
+
+    <div id="gamemenu">
+      <div
+        class="menu__item"
+        id="score"
+        style="
+          float: right;
+          height: 8rem;
+          background-image: url('./images/Score.png');
+        "
+      ></div>
+      <div class="menu__item" id="one">Single Player</div>
+      <div
+        class="menu__item"
+        id="waysToPlay"
+        style="
+          float: right;
+          height: 8rem;
+          background-image: url('./images/Ways\ to\ Play.png');
+        "
+      ></div>
+
+      <div
+        class="menu__item"
+        id="two"
+        style="float: none; background-image: url('./images/MvsM.png')"
+      >
+        Dual Player
+      </div>
+
+      <div
+        class="menu__item"
+        id="three"
+        style="float: none; background-image: url('./images/MvsM.png')"
+      >
+        Online Play
+      </div>
+    </div>
+    <div id="room">
+      <h1 style="color: white; text-align: center">Multiplayer</h1>
+      <button type="submit" id="newGameButton">Create New Game</button>
+      <div style="color: white; text-align: center">OR</div>
+      <div class="form-group">
+        <input type="text" placeholder="Enter Game Code" id="gameCodeInput" />
+      </div>
+      <button type="submit" id="joinGameButton">Join Game</button>
+    </div>
+    <div id="scorecard">
+      <div id="scorecard__scorebox">
+        <div id="scorecard__scorebox--ballProfile"></div>
+        <div id="scorecard__scorebox--profile">
+          <div id="scorecard__scorebox--profile--txt"></div>
+          <div id="scorecard__scorebox--profile--balllist"></div>
+        </div>
+      </div>
+      <div id="scorecard__logo"></div>
+    </div>
+    <div id="gamebox">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div id="endScreen">
+      <div id="endTxt"></div>
+      <div id="playAgainButn">Play Again</div>
+      <div id="homeButn">Home</div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="js/constants.js"></script>
+  <script src="js/utility.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/Table.js"></script>
+  <script src="js/Player.js"></script>
+  <script src="js/Stick.js"></script>
+  <script src="js/assetsloader.js"></script>
+  <script src="js/Ball.js"></script>
+  <script src="js/CPU.js"></script>
+  <script src="js/connection.js"></script>
+  <script src="js/PoolGame.js"></script>
+  <script src="js/GameRules.js"></script>
+</html>

@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Brush Script MT", cursive;
+}
+body {
+  background-image: url("../images/floor3.jpg");
+}
+/* #gameframe{
+    height: 400px;
+    width:90%;
+    margin: 0 auto;
+    margin-top: 20px;
+   
+    position: relative;
+} */
+#login {
+  text-align: center;
+  font-size: 80px;
+  width: 100%;
+  height: 500px;
+  padding-top: 300px;
+  color: white;
+  display: none;
+}
+#assetsloader {
+  text-align: center;
+  font-size: 80px;
+  width: 100%;
+  height: 500px;
+  padding-top: 300px;
+  color: white;
+}
+#blank {
+  text-align: center;
+  font-size: 80px;
+  width: 100%;
+  height: 500px;
+  padding-top: 300px;
+  color: white;
+  display: none;
+}
+
+#gamemenu {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  background-image: url("../images/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+#gamebox {
+  height: 80vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#scorecard {
+  height: 13vh;
+  width: 100%;
+  display: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+#scorecard__scorebox {
+  width: 22%;
+  height: 11vh;
+  position: absolute;
+  left: 14%;
+  display: flex;
+  padding: 12px;
+}
+#scorecard__logo {
+  width: 20%;
+  height: 13vh;
+  position: absolute;
+  padding: 1px;
+  right: 14%;
+  background-image: url("../images/logo5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#scorecard__scorebox--ballProfile {
+  height: 60px;
+  width: 100px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
+#scorecard__scorebox--profile {
+  height: 50px;
+  width: 500px;
+}
+#scorecard__scorebox--profile--txt {
+  font-size: 24px;
+  font-weight: bold;
+  height: 28px;
+  color: aliceblue;
+  font-family: sans-serif;
+  padding-left: 5px;
+}
+#scorecard__scorebox--profile--balllist {
+  margin-top: 2px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+.menu__item {
+  width: 16rem;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1px 10px;
+  padding-top: 108px;
+  padding-left: 60px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: url("../images/MvsC.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+}
+.menu__item:hover {
+  opacity: 1;
+}
+#room {
+  width: 200px;
+  height: 500px;
+  margin: 50px auto;
+  margin-top: 100px;
+  display: none;
+}
+#scoreScreen {
+  width: 40%;
+  height: auto;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  display: none;
+}
+#scoreScreen__exitbtn {
+  display: none;
+  height: 80px;
+  width: 80px;
+  background-image: url("../images/close.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 2rem;
+  right: 10rem;
+  cursor: pointer;
+}
+#scoreScreen__exitbtn:hover {
+  opacity: 0.6;
+}
+#login {
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  background-color: yellowgreen;
+  font-size: 40px;
+
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: 120px;
+  border-radius: 30px;
+
+  display: none;
+}
+#formText {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  color: #000;
+}
+#nameInput {
+  padding: 12px;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+#submitButton {
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+#submitButton:hover {
+  opacity: 0.7;
+}
+#endScreen {
+  width: 30rem;
+  height: 20rem;
+  text-align: center;
+  background-color: yellowgreen;
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: 80px;
+  border-radius: 20px;
+  display: none;
+}
+#homeButn {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 12rem;
+  padding: 15px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+#playAgainButn {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 12rem;
+  padding: 15px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+#endTxt {
+  padding: 10px;
+  padding-top: 40px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  color: #000;
+}
+#newGameButton {
+  margin: 10px auto;
+  margin-top: 20px;
+  width: 12rem;
+  padding: 15px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  color: black;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+#gameCodeInput {
+  width: 12rem;
+  padding: 12px;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#joinGameButton {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 12rem;
+  padding: 15px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
